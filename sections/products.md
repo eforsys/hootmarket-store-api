@@ -1,7 +1,7 @@
 Products
 ========
 
-The products API allows you to access all products enabled to be sold.
+The products API allows access all products enabled to be sold.
 
 Get products
 ------------
@@ -9,9 +9,9 @@ Get products
 
 **Params**
 
-* `limit=#{quantity}` limit the quantity of products returned. The default quantity is 20, maximun 100 and minimun 1.
-* `page=#{page_number}` specific the page 
-* `order=(#{field} asc | #{field} desc)` specifies the order in which the products will be returned.
+* `limit=#{quantity}` limits the number of products returned. The default quantity is 20, maximun 100 and minimun 1.
+* `page=#{page_number}` specifies the page.
+* `order=(#{field} asc | #{field} desc)` specifies the order of products.
 
 **Response**
 
@@ -22,10 +22,8 @@ Get products
       id: id,
       name: name
     },
-    ...
   ],
   pagination: {
-    ...
   }
 }
 ```
